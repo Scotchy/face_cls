@@ -1,0 +1,27 @@
+
+
+training:
+  epochs: 18
+  batch_size: 100
+
+  optimizer:
+    obj:Adam : {lr : 0.001}
+    module: torch.optim
+
+  scheduler:
+    obj:MultiStepLR : {milestones: [2, 6, 10, 14]}
+    module: torch.optim.lr_scheduler
+
+  weight: [0.5, 0.5]
+  loss:
+    obj:BCELoss : {}
+    module: torch.nn
+
+
+model:
+  obj:ResNet34 : {}
+  module: models
+
+transforms:
+  obj:Normalize : {}
+  module: dataset.transforms

@@ -1,0 +1,8 @@
+
+train_data_path: "/home/jules/data/Idemia/db_train.raw"
+train_labels_path: "/home/jules/data/Idemia/label_train.txt"
+
+train_indices_path: "/home/jules/data/Idemia/train_indices.npy"
+validation_indices_path: "/home/jules/data/Idemia/validation_indices.npy"
+
+test_data_path: "/home/jules/data/Idemia/db_test.raw"
