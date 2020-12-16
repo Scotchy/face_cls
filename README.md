@@ -1,3 +1,6 @@
+# Set configuration file
+
+After all, it is necessary to set all paths in config.yaml.
 
 # Train a network
 
