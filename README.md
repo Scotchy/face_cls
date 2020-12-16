@@ -1,10 +1,10 @@
 # Set configuration file
 
-After all, it is necessary to set all paths in config.yaml.
+First of all, it is necessary to set all paths in config.yaml.
 
 # Train a network
 
-First, create a yaml configuration file defining all training and model parameters.
+Create a yaml configuration file defining all training and model parameters.
 
 Template: 
 ```yaml
@@ -52,7 +52,7 @@ python infer.py ./checkpoints/model_name/e12_inf.pth
 ```
 to make inferences on test set with the model `model_name` (checkpoint from epoch n°12). Inferences will be saved in `inferences/model_name/e12_inf.txt`. 
 
-It is also possible to fit a logistic regression on the output of different models :
+It is also possible to fit a logistic regressor on the output of different models :
 ```shell
 python infer_vote_cls.py ./checkpoints/model1.pth ./checkpoints/model2.pth
 ```
